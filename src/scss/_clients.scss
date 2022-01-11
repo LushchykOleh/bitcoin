@@ -1,0 +1,38 @@
+.clients {
+
+  background: #64cbc0;
+  padding: 137px 0 136px;
+
+  &__box {
+
+    .text-16 {
+      padding: 48px 0;
+      font-family: $roboto;
+      font-weight: 400;
+      font-size: 16px;
+      color: $black;
+      line-height: 1.751;
+    }
+
+    .text-14 {
+      font-family: $roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.751;
+      color: $black_transparent;
+      padding: 8px 0;
+    }
+
+    .text-18 {
+      font-family: $roboto;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.556;
+      padding: 8px 0;
+    }
+
+    .img-signature {
+      padding: 2px 0 2px;
+    }
+  }
+}

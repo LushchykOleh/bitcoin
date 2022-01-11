@@ -1,0 +1,168 @@
+.header {
+  position: relative;
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(315deg, rgba(0, 0, 0, 1) 15%, rgba(193, 0, 0, 1) 40%, rgba(250, 0, 0, 1) 50%, rgba(136, 0, 0, 0.9808298319327731) 60%, rgba(0, 0, 0, 1) 85%);
+  max-height: 1020px;
+
+  @include screen(1200) {
+    padding: 30px 0;
+  }
+
+  &__wrapper {
+    padding: 40px 25px;
+
+    &.sticky {
+      position: fixed;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(315deg, rgba(0, 0, 0, 1) 15%, rgba(193, 0, 0, 1) 40%, rgba(250, 0, 0, 1) 50%, rgba(136, 0, 0, 0.9808298319327731) 60%, rgba(0, 0, 0, 1) 85%);
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 15px 0;
+      z-index: 7;
+
+      .header__navigation-menu {
+        right: -360px !important;
+      }
+
+      .header__navigation--inline {
+        display: block;
+      }
+
+      .header__navigation {
+        display: none;
+      }
+
+
+      .header__navigation-button {
+        position: fixed;
+      }
+    }
+  }
+
+  &__logo {
+    margin: 0 20px 0 0;
+
+    img {
+      max-width: 100px;
+    }
+  }
+
+  .container {
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+  a {
+    color: $white;
+    font-family: $raleway;
+    font-weight: 700;
+  }
+
+  &__navigation {
+
+
+    &--inline {
+      align-items: center;
+      display: none;
+
+      a {
+        padding: 5px 0;
+        margin: 0 25px;
+        position: relative;
+
+        &:after {
+          content: '';
+          height: 3px;
+          width: 0;
+          background: $white;
+          transition: 0.4s;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+
+        &:hover {
+
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &-button {
+      cursor: pointer;
+      display: block;
+      width: 42px;
+      height: 42px;
+      transition: 0.4s;
+      background: url(../images/menu.png)no-repeat 50% 50%;
+      background-size: 34px;
+      border: 2px solid $white;
+      position: relative;
+      z-index: 7;
+    }
+
+    &-menu {
+      position: fixed;
+      right: -360px;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      padding: 120px 15px 40px;
+      background: red;
+      width: 350px;
+      text-align: center;
+      transition: 0.4s;
+      z-index: 5;
+
+      a {
+        font-size: 20px;
+        padding: 10px 0;
+      }
+    }
+
+    &.opened {
+
+      .header__navigation-button {
+        background-image: url(../images/cancel.png);
+        border-color: transparent;
+      }
+
+      .header__navigation-menu {
+        right: 0;
+      }
+    }
+  }
+
+  &__main {
+    display: block;
+    max-width: 560px;
+    text-align: center;
+    margin: 100px 0 280px;
+
+    &-top {
+      font-size: 65px;
+      font-family: $raleway;
+      font-weight: 900;
+      color: $white;
+      border-top: 3px solid $white_transparent;
+      border-bottom: 3px solid $white_transparent;
+      max-width: 560px;
+      margin: 0 auto;
+
+    }
+
+    &-text {
+      font-size: 25px;
+      font-family: $roboto;
+      color: $white_transparent;
+      padding: 28px;
+    }
+
+  }
+
+}

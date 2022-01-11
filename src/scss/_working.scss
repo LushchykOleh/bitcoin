@@ -1,0 +1,125 @@
+.working {
+
+  background: $grey;
+  padding: 124px 0 124px;
+
+  &__box {
+    text-align: center;
+
+  }
+
+  h2 {
+
+    color: $black;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: $raleway;
+    padding-bottom: 30px;
+  }
+
+  p {
+
+    color: $black_transparent;
+    font-size: 16px;
+    font-family: $roboto;
+    font-weight: 500;
+  }
+
+  &__row {
+    max-width: 1170px;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0 -15px;
+    padding-top: 60px;
+
+
+    .col-25 {
+      position: relative;
+      width: calc(25% - 30px);
+      flex-shrink: 0;
+      margin: 0 15px;
+
+      @include screen(850) {
+        width: calc(40% - 30px);
+        margin: 44px;
+      }
+
+      @include screen(650) {
+        width: calc(50% - 30px);
+      }
+
+
+      .color-1 {
+        background: #10c6fc;
+
+        &:hover {
+          background: #000;
+          opacity: 0.5;
+          transition: 0.3s;
+        }
+      }
+
+      .color-2 {
+        background: #835aeb;
+
+        &:hover {
+          background: #000;
+          opacity: 0.5;
+          transition: 0.3s;
+        }
+      }
+
+      .color-3 {
+        background: #002453;
+
+        &:hover {
+          background: #000;
+          opacity: 0.5;
+          transition: 0.3s;
+        }
+      }
+
+      .color-4 {
+        background: #ff2b4a;
+
+        &:hover {
+          background: #000;
+          opacity: 0.5;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+
+
+  &__img {
+    width: 285px;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include screen(850) {
+      width: 360px;
+      height: 300px;
+    }
+
+    @include screen(650) {
+      width: 550px;
+      height: auto;
+    }
+
+    .text-16 {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-family: $raleway;
+      font-weight: 700;
+      color: $white;
+      margin-top: 45px;
+    }
+
+  }
+
+}
