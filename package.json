@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "bitcopy",
   "version": "1.0.0",
-  "description": "My portfolio",
+  "description": "bitcopy",
   "main": "src/index.js",
   "scripts": {
     "watch": "webpack --mode development --watch",
