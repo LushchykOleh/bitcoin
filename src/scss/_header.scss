@@ -64,10 +64,13 @@
 
     &.account {
       background-position: -295px 0;
+      position: relative;
+
     }
 
     &.search {
       background-position: -368px 0;
+      margin-left: 45px;
     }
   }
 
@@ -76,5 +79,26 @@
     font-weight: 700;
     font-size: 25px;
     margin-right: 40px;
+  }
+
+  .account {
+
+    &__menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 30px 0 0;
+
+      a {
+        display: block;
+        color: $white;
+        font-size: 20px;
+        padding: 7px 15px;
+        white-space: nowrap;
+        background: blue;
+
+      }
+    }
   }
 }
