@@ -98,9 +98,17 @@ table {
       background-position: -145px 0;
       width: 25px; }
     .header .icon.account {
-      background-position: -295px 0; }
+      background-position: -295px 0;
+      position: relative; }
+      .header .icon.account__menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        -webkit-transform: translateY();
+                transform: translateY(); }
     .header .icon.search {
-      background-position: -368px 0; }
+      background-position: -368px 0;
+      margin-left: 45px; }
   .header__logo {
     color: #fefbfb;
     font-weight: 700;

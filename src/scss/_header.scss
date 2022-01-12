@@ -64,10 +64,19 @@
 
     &.account {
       background-position: -295px 0;
+      position: relative;
+
+      &__menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateY();
+      }
     }
 
     &.search {
       background-position: -368px 0;
+      margin-left: 45px;
     }
   }
 
