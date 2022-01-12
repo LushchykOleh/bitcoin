@@ -21,45 +21,53 @@
     align-items: center;
     margin-right: 120px;
 
-    a {
-      display: block;
-      width: 26px;
-      height: 24px;
-      background: url(../images/sprite.png) no-repeat;
-
-
-
-      &.facebook {
-        background-position: 0 0;
-        width: 10px;
-      }
-
-      &.twitter {
-        background-position: -28px -2px;
-        width: 20px;
-      }
-
-      &.linkedin {
-        background-position: -68px 1px;
-        width: 20px;
-      }
-
-      &.instagram {
-        background-position: -105px -1px;
-        width: 20px;
-      }
-
-      &.youtube {
-        background-position: -145px 0;
-        width: 25px;
-      }
-    }
-
     li {
 
       &+li {
         margin-left: 16px;
       }
+    }
+  }
+
+  .icon {
+    display: block;
+    width: 26px;
+    height: 24px;
+    background: url(../images/sprite.png) no-repeat;
+
+
+
+    &.facebook {
+      background-position: 0 0;
+      width: 10px;
+    }
+
+    &.twitter {
+      background-position: -28px -2px;
+      width: 20px;
+    }
+
+    &.linkedin {
+      background-position: -68px 1px;
+      width: 20px;
+    }
+
+    &.instagram {
+      background-position: -105px -1px;
+      width: 20px;
+    }
+
+    &.youtube {
+      background-position: -145px 0;
+      width: 25px;
+    }
+
+    &.account {
+      background-position: -295px 0;
+    }
+
+    &.search {
+      background-position: -368px 0;
     }
   }
 
