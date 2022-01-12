@@ -75,28 +75,32 @@ table {
     display: flex;
     align-items: center;
     margin-right: 120px; }
-    .header .socials a {
-      display: block;
-      width: 26px;
-      height: 24px;
-      background: url(../images/sprite.png) no-repeat; }
-      .header .socials a.facebook {
-        background-position: 0 0;
-        width: 10px; }
-      .header .socials a.twitter {
-        background-position: -28px -2px;
-        width: 20px; }
-      .header .socials a.linkedin {
-        background-position: -68px 1px;
-        width: 20px; }
-      .header .socials a.instagram {
-        background-position: -105px -1px;
-        width: 20px; }
-      .header .socials a.youtube {
-        background-position: -145px 0;
-        width: 25px; }
     .header .socials li + li {
       margin-left: 16px; }
+  .header .icon {
+    display: block;
+    width: 26px;
+    height: 24px;
+    background: url(../images/sprite.png) no-repeat; }
+    .header .icon.facebook {
+      background-position: 0 0;
+      width: 10px; }
+    .header .icon.twitter {
+      background-position: -28px -2px;
+      width: 20px; }
+    .header .icon.linkedin {
+      background-position: -68px 1px;
+      width: 20px; }
+    .header .icon.instagram {
+      background-position: -105px -1px;
+      width: 20px; }
+    .header .icon.youtube {
+      background-position: -145px 0;
+      width: 25px; }
+    .header .icon.account {
+      background-position: -295px 0; }
+    .header .icon.search {
+      background-position: -368px 0; }
   .header__logo {
     color: #fefbfb;
     font-weight: 700;
