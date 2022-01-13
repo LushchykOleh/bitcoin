@@ -114,7 +114,13 @@ table {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    padding: 30px 0 0; }
+    padding: 30px 0 0;
+    height: 0;
+    transition: 0.3s;
+    overflow: hidden; }
+    .header .account__menu:hover {
+      overflow: initial;
+      transition: .5s; }
     .header .account__menu a {
       display: block;
       color: #fff;
@@ -122,6 +128,10 @@ table {
       padding: 10px 25px;
       white-space: nowrap;
       background: blue; }
+      .header .account__menu a:first-child {
+        border-radius: 5px 5px 0 0; }
+      .header .account__menu a:last-child {
+        border-radius: 0 0 5px 5px; }
 
 
 /*# sourceMappingURL=style.css.map*/
