@@ -1,0 +1,93 @@
+.box-row {
+  padding: 50px 0 60px;
+
+
+
+  &__container-box {
+    max-width: 1665px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+
+    @include screen(1300) {
+      margin: 20px auto;
+
+    }
+
+    @include screen(1160) {
+      margin: 20px auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .box {
+      width: 390px;
+      height: 275px;
+      background: $white;
+      color: $black;
+      margin: 20px;
+      text-align: center;
+      padding: 15px;
+
+      @include screen(432) {
+        max-width: 400px;
+        width: 100%;
+
+        h3 {
+          font-size: 18px;
+        }
+
+
+      }
+
+      &__image {
+        text-align: center;
+        padding: 25px 0 20px;
+      }
+
+      .text-box {
+        font-weight: 700;
+        font-family: $poppins;
+        font-size: 22px;
+        line-height: 1.245;
+
+      }
+
+      .text-box17 {
+        font-size: 17px;
+        font-family: $poppins;
+        font-weight: 400;
+        line-height: 1.612;
+        padding: 32px 0 60px;
+        max-width: 275px;
+        margin: 0 auto;
+
+
+        @include screen(1376) {
+          padding: 15px 10px;
+        }
+
+        @include screen(1330) {
+          padding: 15px 10px;
+        }
+
+        @include screen(432) {
+          padding: 20px 10px;
+        }
+      }
+
+      &:hover {
+        background: $yellow;
+        color: $white;
+
+        img {
+          color: $yellow;
+        }
+      }
+    }
+  }
+
+
+
+}
