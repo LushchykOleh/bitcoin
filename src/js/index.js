@@ -14,7 +14,7 @@ $('.burger-btn').on('click', function() {
 //swiper
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'vertical',
+    //direction: 'vertical',
     loop: true,
   
     // If we need pagination
@@ -54,9 +54,3 @@ $('a').on('click', function (e) {
 
 
 })
-
-
-
-
-
-
