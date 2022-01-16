@@ -36,7 +36,7 @@
                         <li>
                             <a class="burger-link" href="#">Home-1</a>
                         </li>
-                        <li><a class="burger-link" href="#">Home-2</a></li>
+                        <li><a class="burger-link" href="#about">About us</a></li>
                         <li><a class="burger-link" href="#">Home-3</a></li>
                         <li><a class="burger-link" href="#">Home-4</a></li>
                         <li><a class="burger-link" href="#">Home-5</a></li>
@@ -50,13 +50,13 @@
             <div class="container">
                 <section class="header-slider" id="#">
                     <div class="header-slider__wrapper-swiper">
-                        <div class="header-slider__swiper">
+                        <div class="swiper-container">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
                                     <div class="swiper-slide__colum-50">
-                                        <img src="./images/Bitcoin2.png" alt="bitcoin">
+                                        <img src="./images/logo-main-2.png" alt="bitcoin">
                                     </div>
                                     <div class="swiper-slide__colum-50">
                                         <h2 class="text-55">
@@ -75,10 +75,14 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-
+                                    <div class="swiper-slide__colum-50">
+                                        <img src="./images/Bitcoin2.png" alt="bitcoin">
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-
+                                    <div class="swiper-slide__colum-50">
+                                        <img src="./images/Bitcoin2.png" alt="bitcoin">
+                                    </div>
                                 </div>
 
                             </div>
@@ -93,7 +97,13 @@
                             <div class="swiper-button-go">
                                 <a href="#"><img src="./images/left-arrow.png" alt="left-arrow" class="go"></a>
                             </div> -->
+                            <div class="swiper-button">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
 
+                            </div>
+                            <!-- Если вам нужна пагинация -->
+                            <div class="swiper-pagination"></div>
                             <!-- If we need scrollbar -->
                             <div class="swiper-scrollbar"></div>
                         </div>
@@ -136,9 +146,43 @@
                 </div>
 
             </div>
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="about__wrapper-row">
+                        <div class="col-50">
+                            <h3 class="text-45">About Us</h3>
+                            <p class="text-17">
+                                It is a long established fact that a reader will be distracted bIt is a long established
+                                fact that a reader will be distracted by y It is a long established fact that a reader
+                                will be distracted by It is a long established fact that a reader will be distracted by
+                            </p>
+                            <button class="about__btn">Read More</button>
+                        </div>
+                        <div class="col-50">
+                            <img src="./images/bitcoin-about.png" alt="Bitcoin2">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            /* Параметры */
+            // direction: 'vertical',
+            loop: true,
+
+            /* Если вам нужна пагинация */
+            pagination: '.swiper-pagination',
+
+            /* Навигационные стрелки */
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+
+            /* Если нужна полоса прокрутки */
+            scrollbar: '.swiper-scrollbar',
+        })
+    </script>
 </body>
 
 </html>

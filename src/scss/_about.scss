@@ -1,0 +1,61 @@
+.about {
+
+  &__wrapper-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 115px 0;
+    border: 2px dashed $white;
+
+    .col-50 {
+
+      margin-left: 80px;
+      width: calc(50% - 15px);
+      max-width: 100%;
+
+      .text-45 {
+        font-size: 45px;
+        font-weight: 600;
+        font-family: $poppins;
+        line-height: 0.631;
+        text-align: left;
+      }
+
+      .text-17 {
+
+        max-width: 504px;
+        font-size: 17px;
+        font-weight: 400;
+        font-family: $poppins;
+        line-height: 1.706;
+        text-align-last: left;
+        padding: 80px 0;
+      }
+
+      img {
+
+        padding-right: 115px;
+      }
+    }
+  }
+
+  &__btn {
+
+    width: 225px;
+    border: 2px solid $white;
+    padding: 19px 0;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: $poppins;
+    background-color: transparent;
+    color: $white;
+    margin: 70px 0 0;
+
+    &:hover {
+
+      background: $yellow;
+      border: 2px solid $yellow;
+
+    }
+  }
+}
