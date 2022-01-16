@@ -2,6 +2,27 @@ window.$ = window.jQuery = require('jquery');
 
 
 
+//-----swiper
+$(document).ready(function () {
+  /* Инициализация swiper, когда документ загрузился */  
+  var mySwiper = new Swiper ('.swiper-container', {
+    /* Параметры */
+   
+    loop: true
+  })  
+  
+  window.onload = function(){
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+        },
+        });
+}
+});
+//---end swiper
+
 $(document).ready(function (){
 
 //Mobile menu
