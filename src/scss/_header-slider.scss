@@ -3,6 +3,10 @@
   margin: 150px 0;
   //min-width: 0;
 
+  @include screen(1125) {
+    margin: 100px 0 0;
+  }
+
   &__wrapper-swiper {
     .swiper-button {
       max-width: 800px;
@@ -86,11 +90,22 @@
       align-items: center;
       padding: 15px 0;
 
+      @include screen(1180) {
+        display: block;
+        text-align: center;
+
+      }
+
 
       &__colum-50 {
 
         margin-left: 80px;
 
+        @include screen(1180) {
+          text-align: center;
+          margin-left: 0;
+          margin: 0 15px;
+        }
 
         .text-55 {
 
@@ -100,6 +115,17 @@
           line-height: 1.189;
           text-align: start;
           padding-bottom: 60px;
+
+          @include screen(1180) {
+            font-size: 55px;
+            padding-bottom: 20px;
+            text-align: center;
+          }
+
+          @include screen(1125) {
+            font-size: 36px;
+            padding-bottom: 20px;
+          }
         }
 
         .text-18 {
@@ -109,13 +135,22 @@
           line-height: 1.689;
           padding-bottom: 60px;
 
+          @include screen(1180) {
+
+            padding-bottom: 20px;
+          }
+
+          @include screen(1125) {
+
+            padding-bottom: 20px;
+          }
+
         }
 
         .button {
 
           .button-transperent {
 
-            //padding: 7px 0;
             width: 230px;
             font-size: 18px;
             font-weight: 500;
@@ -130,11 +165,14 @@
               background: $yellow;
               border: $yellow;
             }
+
+            @include screen(660) {
+              margin: 30px 0;
+            }
           }
 
           .button-yellow {
 
-            //padding: 7px 0;
             width: 230px;
             font-size: 18px;
             font-weight: 500;
@@ -152,7 +190,6 @@
         }
 
       }
-
     }
   }
 }
