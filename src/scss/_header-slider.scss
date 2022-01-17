@@ -3,7 +3,6 @@
   margin: 150px 0;
 
   //min-width: 0;
-<<<<<<< HEAD
 
   @include screen(1125) {
     margin: 100px 0 0;
@@ -32,209 +31,205 @@
         }
       }
     }
-=======
-  @include screen(1125) {
-    margin: 100px 0 0;
->>>>>>> 3d67eebb856a49ee46f0dc4ae765cbf123cfb23c
-  }
 
-  // &__wrapper-swiper {
-  //   .swiper-button {
-  //     max-width: 800px;
-  //     position: absolute;
-  //     display: block;
+    @include screen(1125) {
+      margin: 100px 0 0;
+    }
 
-  //     .swiper-button-prev {
-  //       color: white;
-  //     }
-  //   }
+    // &__wrapper-swiper {
+    //   .swiper-button {
+    //     max-width: 800px;
+    //     position: absolute;
+    //     display: block;
 
-  //   .container {
+    //     .swiper-button-prev {
+    //       color: white;
+    //     }
+    //   }
 
-  //     width: 800px;
-  //     max-width: 1000px;
-  //     height: 500px;
+    //   .container {
 
-  //     .swiper-wrapper {
-  //       .swiper-slide {
-  //         padding: auto;
-  //       }
+    //     width: 800px;
+    //     max-width: 1000px;
+    //     height: 500px;
 
-  //     }
-  //   }
-  // }
+    //     .swiper-wrapper {
+    //       .swiper-slide {
+    //         padding: auto;
+    //       }
 
-  // .swiper-button-prev::after,
-  // .swiper-button-next::after {
+    //     }
+    //   }
+    // }
 
-  //   color: $white;
-  //   font-size: 24px;
-  //   // border: 2px solid white;
-  //   //width: 100px;
-  //   //height: 100px;
-  //   //border-radius: 200px;
-  // }
+    // .swiper-button-prev::after,
+    // .swiper-button-next::after {
 
-  // .swiper-button-back,
-  // .swiper-button-go {
-  //   position: absolute;
-  //   cursor: pointer;
+    //   color: $white;
+    //   font-size: 24px;
+    //   // border: 2px solid white;
+    //   //width: 100px;
+    //   //height: 100px;
+    //   //border-radius: 200px;
+    // }
 
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-content: center;
+    // .swiper-button-back,
+    // .swiper-button-go {
+    //   position: absolute;
+    //   cursor: pointer;
 
-  //   a {
-  //     .back {
-  //       width: 74px;
-  //       max-width: 100%;
-  //       padding: 5px;
-  //       border-radius: 74px;
-  //       border: 4px solid white;
-  //       left: 0;
-  //       right: auto;
+    //   display: flex;
+    //   justify-content: space-between;
+    //   align-content: center;
 
-  //       &:hover {
-  //         color: yellow;
-  //         background: yellowgreen;
-  //       }
-  //     }
+    //   a {
+    //     .back {
+    //       width: 74px;
+    //       max-width: 100%;
+    //       padding: 5px;
+    //       border-radius: 74px;
+    //       border: 4px solid white;
+    //       left: 0;
+    //       right: auto;
 
-  //     .go {
-  //       width: 74px;
-  //       max-width: 100%;
-  //       padding: 5px;
-  //       border-radius: 74px;
-  //       border: 4px solid white;
-  //       margin-left: 15px;
-  //       right: 0;
-  //       left: auto;
-  //     }
-  //   }
-  // }
+    //       &:hover {
+    //         color: yellow;
+    //         background: yellowgreen;
+    //       }
+    //     }
 
-  .swiper-wrapper {
+    //     .go {
+    //       width: 74px;
+    //       max-width: 100%;
+    //       padding: 5px;
+    //       border-radius: 74px;
+    //       border: 4px solid white;
+    //       margin-left: 15px;
+    //       right: 0;
+    //       left: auto;
+    //     }
+    //   }
+    // }
 
-    .swiper-slide {
+    .swiper-wrapper {
 
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 0;
+      .swiper-slide {
 
-      @include screen(1180) {
-        display: block;
-        text-align: center;
-
-      }
-
-
-      @include screen(1180) {
-        display: block;
-        text-align: center;
-
-      }
-
-
-      &__colum-50 {
-
-        margin-left: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
 
         @include screen(1180) {
+          display: block;
           text-align: center;
-          margin-left: 0;
-          margin: 0 15px;
+
         }
 
-        .text-55 {
 
-          font-size: 55px;
-          font-weight: 700;
-          font-family: $openSans;
-          line-height: 1.189;
-          text-align: start;
-          padding-bottom: 60px;
+        @include screen(1180) {
+          display: block;
+          text-align: center;
+
+        }
+
+
+        &__colum-50 {
+
+          margin-left: 80px;
 
           @include screen(1180) {
-            font-size: 55px;
-            padding-bottom: 20px;
             text-align: center;
+            margin-left: 0;
+            margin: 0 15px;
           }
 
-          @include screen(1125) {
-            font-size: 36px;
-            padding-bottom: 20px;
-          }
-        }
+          .text-55 {
 
-        .text-18 {
-          font-size: 18px;
-          font-weight: 400;
-          font-family: $openSans;
-          line-height: 1.689;
-          padding-bottom: 60px;
-
-          @include screen(1180) {
-
-            padding-bottom: 20px;
-          }
-
-          @include screen(1125) {
-
-            padding-bottom: 20px;
-          }
-<<<<<<< HEAD
-
-=======
->>>>>>> 3d67eebb856a49ee46f0dc4ae765cbf123cfb23c
-        }
-
-        .button {
-
-          .button-transperent {
-
-            width: 230px;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 3.633;
+            font-size: 55px;
+            font-weight: 700;
             font-family: $openSans;
-            border: 2px solid $white;
-            background-color: transparent;
-            color: $white;
-            margin-right: 36px;
+            line-height: 1.189;
+            text-align: start;
+            padding-bottom: 60px;
 
-            &:hover {
-              background: $yellow;
-              border: $yellow;
+            @include screen(1180) {
+              font-size: 55px;
+              padding-bottom: 20px;
+              text-align: center;
             }
 
-            @include screen(660) {
-              margin: 30px 0;
+            @include screen(1125) {
+              font-size: 36px;
+              padding-bottom: 20px;
             }
           }
 
-          .button-yellow {
-
-            width: 230px;
+          .text-18 {
             font-size: 18px;
-            font-weight: 500;
-            line-height: 3.633;
+            font-weight: 400;
             font-family: $openSans;
-            border: 2px solid $yellow;
-            background: $yellow;
-            color: $white;
+            line-height: 1.689;
+            padding-bottom: 60px;
 
-            &:hover {
+            @include screen(1180) {
+
+              padding-bottom: 20px;
+            }
+
+            @include screen(1125) {
+
+              padding-bottom: 20px;
+            }
+
+          }
+
+          .button {
+
+            .button-transperent {
+
+              width: 230px;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 3.633;
+              font-family: $openSans;
               border: 2px solid $white;
               background-color: transparent;
+              color: $white;
+              margin-right: 36px;
+
+              &:hover {
+                background: $yellow;
+                border: $yellow;
+              }
+
+              @include screen(660) {
+                margin: 30px 0;
+              }
             }
 
-            @include screen(1160) {
-              margin: 15px 0;
+            .button-yellow {
+
+              width: 230px;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 3.633;
+              font-family: $openSans;
+              border: 2px solid $yellow;
+              background: $yellow;
+              color: $white;
+
+              &:hover {
+                border: 2px solid $white;
+                background-color: transparent;
+              }
+
+              @include screen(1160) {
+                margin: 15px 0;
+              }
             }
           }
         }
-
       }
     }
   }
