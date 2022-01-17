@@ -12,11 +12,14 @@
       margin: 15px;
       text-align: center;
       flex-direction: column-reverse;
+<<<<<<< HEAD
       padding: 25px 0;
     }
 
     @include screen(460) {
       padding: 25px 0;
+=======
+>>>>>>> 3d67eebb856a49ee46f0dc4ae765cbf123cfb23c
     }
 
     .col-50 {
@@ -29,10 +32,15 @@
         margin-left: 0;
         text-align: center;
         padding: 15px;
+<<<<<<< HEAD
         width: 100%;
       }
 
 
+=======
+      }
+
+>>>>>>> 3d67eebb856a49ee46f0dc4ae765cbf123cfb23c
       .text-45 {
         font-size: 45px;
         font-weight: 600;
@@ -46,10 +54,13 @@
           text-align: center;
           margin: 15px 0;
         }
+<<<<<<< HEAD
 
         @include screen(460) {
           font-size: 24px;
         }
+=======
+>>>>>>> 3d67eebb856a49ee46f0dc4ae765cbf123cfb23c
       }
 
       .text-17 {
@@ -67,12 +78,15 @@
           width: 100%;
           text-align: center;
           padding: 15px;
+<<<<<<< HEAD
           max-width: 100%;
           text-align: left;
         }
 
         @include screen(460) {
           font-size: 15px;
+=======
+>>>>>>> 3d67eebb856a49ee46f0dc4ae765cbf123cfb23c
         }
       }
 
@@ -84,7 +98,10 @@
           margin-left: 0;
           text-align: center;
           padding: 15px;
+<<<<<<< HEAD
           max-width: calc(70% - 20px);
+=======
+>>>>>>> 3d67eebb856a49ee46f0dc4ae765cbf123cfb23c
         }
       }
     }

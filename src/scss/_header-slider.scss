@@ -1,7 +1,9 @@
 .header-slider {
   padding: 50px;
   margin: 150px 0;
+
   //min-width: 0;
+<<<<<<< HEAD
 
   @include screen(1125) {
     margin: 100px 0 0;
@@ -30,7 +32,37 @@
         }
       }
     }
+=======
+  @include screen(1125) {
+    margin: 100px 0 0;
+>>>>>>> 3d67eebb856a49ee46f0dc4ae765cbf123cfb23c
   }
+
+  // &__wrapper-swiper {
+  //   .swiper-button {
+  //     max-width: 800px;
+  //     position: absolute;
+  //     display: block;
+
+  //     .swiper-button-prev {
+  //       color: white;
+  //     }
+  //   }
+
+  //   .container {
+
+  //     width: 800px;
+  //     max-width: 1000px;
+  //     height: 500px;
+
+  //     .swiper-wrapper {
+  //       .swiper-slide {
+  //         padding: auto;
+  //       }
+
+  //     }
+  //   }
+  // }
 
   // .swiper-button-prev::after,
   // .swiper-button-next::after {
@@ -97,6 +129,13 @@
       }
 
 
+      @include screen(1180) {
+        display: block;
+        text-align: center;
+
+      }
+
+
       &__colum-50 {
 
         margin-left: 80px;
@@ -144,7 +183,10 @@
 
             padding-bottom: 20px;
           }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3d67eebb856a49ee46f0dc4ae765cbf123cfb23c
         }
 
         .button {
@@ -185,6 +227,10 @@
             &:hover {
               border: 2px solid $white;
               background-color: transparent;
+            }
+
+            @include screen(1160) {
+              margin: 15px 0;
             }
           }
         }
