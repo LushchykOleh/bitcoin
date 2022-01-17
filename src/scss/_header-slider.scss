@@ -1,32 +1,37 @@
 .header-slider {
   padding: 50px;
   margin: 150px 0;
+
   //min-width: 0;
-
-  &__wrapper-swiper {
-    .swiper-button {
-      max-width: 800px;
-      position: absolute;
-      display: block;
-
-      .swiper-button-prev {
-        color: white;
-      }
-    }
-
-    .container {
-
-      width: 800px;
-      max-width: 1000px;
-      height: 500px;
-
-      .swiper-wrapper {
-        .swiper-slide {
-          padding: auto;
-        }
-      }
-    }
+  @include screen(1125) {
+    margin: 100px 0 0;
   }
+
+  // &__wrapper-swiper {
+  //   .swiper-button {
+  //     max-width: 800px;
+  //     position: absolute;
+  //     display: block;
+
+  //     .swiper-button-prev {
+  //       color: white;
+  //     }
+  //   }
+
+  //   .container {
+
+  //     width: 800px;
+  //     max-width: 1000px;
+  //     height: 500px;
+
+  //     .swiper-wrapper {
+  //       .swiper-slide {
+  //         padding: auto;
+  //       }
+
+  //     }
+  //   }
+  // }
 
   // .swiper-button-prev::after,
   // .swiper-button-next::after {
@@ -87,10 +92,22 @@
       padding: 15px 0;
 
 
+      @include screen(1180) {
+        display: block;
+        text-align: center;
+
+      }
+
+
       &__colum-50 {
 
         margin-left: 80px;
 
+        @include screen(1180) {
+          text-align: center;
+          margin-left: 0;
+          margin: 0 15px;
+        }
 
         .text-55 {
 
@@ -100,6 +117,17 @@
           line-height: 1.189;
           text-align: start;
           padding-bottom: 60px;
+
+          @include screen(1180) {
+            font-size: 55px;
+            padding-bottom: 20px;
+            text-align: center;
+          }
+
+          @include screen(1125) {
+            font-size: 36px;
+            padding-bottom: 20px;
+          }
         }
 
         .text-18 {
@@ -109,6 +137,15 @@
           line-height: 1.689;
           padding-bottom: 60px;
 
+          @include screen(1180) {
+
+            padding-bottom: 20px;
+          }
+
+          @include screen(1125) {
+
+            padding-bottom: 20px;
+          }
         }
 
         .button {
@@ -147,6 +184,10 @@
             &:hover {
               border: 2px solid $white;
               background-color: transparent;
+            }
+
+            @include screen(1160) {
+              margin: 15px 0;
             }
           }
         }

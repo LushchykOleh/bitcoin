@@ -949,25 +949,25 @@ table {
 .header-slider {
   padding: 50px;
   margin: 150px 0; }
-  .header-slider__wrapper-swiper .swiper-button {
-    max-width: 800px;
-    position: absolute;
-    display: block; }
-    .header-slider__wrapper-swiper .swiper-button .swiper-button-prev {
-      color: white; }
-  .header-slider__wrapper-swiper .container {
-    width: 800px;
-    max-width: 1000px;
-    height: 500px; }
-    .header-slider__wrapper-swiper .container .swiper-wrapper .swiper-slide {
-      padding: auto; }
+  @media (max-width: 1125px) {
+    .header-slider {
+      margin: 100px 0 0; } }
   .header-slider .swiper-wrapper .swiper-slide {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0; }
+    @media (max-width: 1180px) {
+      .header-slider .swiper-wrapper .swiper-slide {
+        display: block;
+        text-align: center; } }
     .header-slider .swiper-wrapper .swiper-slide__colum-50 {
       margin-left: 80px; }
+      @media (max-width: 1180px) {
+        .header-slider .swiper-wrapper .swiper-slide__colum-50 {
+          text-align: center;
+          margin-left: 0;
+          margin: 0 15px; } }
       .header-slider .swiper-wrapper .swiper-slide__colum-50 .text-55 {
         font-size: 55px;
         font-weight: 700;
@@ -975,12 +975,27 @@ table {
         line-height: 1.189;
         text-align: start;
         padding-bottom: 60px; }
+        @media (max-width: 1180px) {
+          .header-slider .swiper-wrapper .swiper-slide__colum-50 .text-55 {
+            font-size: 55px;
+            padding-bottom: 20px;
+            text-align: center; } }
+        @media (max-width: 1125px) {
+          .header-slider .swiper-wrapper .swiper-slide__colum-50 .text-55 {
+            font-size: 36px;
+            padding-bottom: 20px; } }
       .header-slider .swiper-wrapper .swiper-slide__colum-50 .text-18 {
         font-size: 18px;
         font-weight: 400;
         font-family: "Open Sans", sans-serif;
         line-height: 1.689;
         padding-bottom: 60px; }
+        @media (max-width: 1180px) {
+          .header-slider .swiper-wrapper .swiper-slide__colum-50 .text-18 {
+            padding-bottom: 20px; } }
+        @media (max-width: 1125px) {
+          .header-slider .swiper-wrapper .swiper-slide__colum-50 .text-18 {
+            padding-bottom: 20px; } }
       .header-slider .swiper-wrapper .swiper-slide__colum-50 .button .button-transperent {
         width: 230px;
         font-size: 18px;
@@ -1006,6 +1021,9 @@ table {
         .header-slider .swiper-wrapper .swiper-slide__colum-50 .button .button-yellow:hover {
           border: 2px solid #fff;
           background-color: transparent; }
+        @media (max-width: 1160px) {
+          .header-slider .swiper-wrapper .swiper-slide__colum-50 .button .button-yellow {
+            margin: 15px 0; } }
 
 .box-row {
   padding: 50px 0 60px; }
@@ -1074,26 +1092,53 @@ table {
   align-items: center;
   padding: 115px 0;
   border: 2px dashed #fff; }
+  @media (max-width: 1024px) {
+    .about__wrapper-row {
+      display: flex;
+      margin: 15px;
+      text-align: center;
+      flex-direction: column-reverse; } }
   .about__wrapper-row .col-50 {
     margin-left: 80px;
     width: calc(50% - 15px);
     max-width: 100%; }
+    @media (max-width: 1024px) {
+      .about__wrapper-row .col-50 {
+        margin-left: 0;
+        text-align: center;
+        padding: 15px; } }
     .about__wrapper-row .col-50 .text-45 {
       font-size: 45px;
       font-weight: 600;
       font-family: "Poppins", sans-serif;
       line-height: 0.631;
-      text-align: left; }
+      text-align: left;
+      padding: 10px 0; }
+      @media (max-width: 1024px) {
+        .about__wrapper-row .col-50 .text-45 {
+          text-align: center;
+          margin: 15px 0; } }
     .about__wrapper-row .col-50 .text-17 {
       max-width: 504px;
       font-size: 17px;
       font-weight: 400;
       font-family: "Poppins", sans-serif;
       line-height: 1.706;
-      text-align-last: left;
-      padding: 80px 0; }
+      text-align: left;
+      padding: 60px 0; }
+      @media (max-width: 1024px) {
+        .about__wrapper-row .col-50 .text-17 {
+          margin-left: 0;
+          width: 100%;
+          text-align: center;
+          padding: 15px; } }
     .about__wrapper-row .col-50 img {
       padding-right: 115px; }
+      @media (max-width: 1024px) {
+        .about__wrapper-row .col-50 img {
+          margin-left: 0;
+          text-align: center;
+          padding: 15px; } }
 
 .about__btn {
   width: 225px;
