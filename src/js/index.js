@@ -1,48 +1,13 @@
 window.$ = window.jQuery = require('jquery');
 
-// import Swiper, {
-//   Autoplay,
-//   Navigation,
-//   Pagination
-// } from 'swiper';
-import Swiper from 'swiper';
-// import 'swiper/css';
+import Swiper, {
+  Autoplay,
+  Navigation,
+  Pagination
+} from 'swiper';
 
-const swiper = new Swiper('#header-slider.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
+Swiper.use([Autoplay, Navigation]);
 
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-
-});
-
-// //-----swiper
-// $(document).ready(function () {
-//   /* Инициализация swiper, когда документ загрузился */
-//   var mySwiper = new Swiper('.swiper-container', {
-//     /* Параметры */
-
-//     loop: true
-//   })
-
-//   window.onload = function () {
-
-//     var swiper = new Swiper('.swiper-container', {
-//       pagination: {
-//         el: '.swiper-pagination',
-//         dynamicBullets: true,
-//       },
-//     });
-//   }
-// });
-//---end swiper
 
 $(document).ready(function () {
 
@@ -51,32 +16,29 @@ $(document).ready(function () {
     $('.menu-icon').toggleClass('opened');
     //$('body').toggleClass('no-scroll');
   })
-
+  //
 
   //swiper
-  // const swiper = new Swiper('.swiper', {
-  //   // Optional parameters
-  //   //direction: 'vertical',
-  //   loop: true,
+  const swiper = new Swiper('.header-slider.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+    //autoplay 5s
+    autoplay: {
+      delay: 5000,
+    },
+    //--
+    //количество слайдов в видимой области
+    slidesPerView: 1,
+    spaceBetween: 30,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
-  //   // If we need pagination
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //   },
 
-  //   // Navigation arrows
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev',
-  //   },
-
-  //   // And if we need scrollbar
-  //   scrollbar: {
-  //     el: '.swiper-scrollbar',
-  //     //draggable: true
-  //   },
-  // });
-
+  });
 
   //Anchor links
   $('a').on('click', function (e) {
