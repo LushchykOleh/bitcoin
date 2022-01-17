@@ -30,6 +30,8 @@
       text-align: center;
       padding: 15px;
 
+
+
       @include screen(432) {
         max-width: 400px;
         width: 100%;
@@ -37,13 +39,14 @@
         h3 {
           font-size: 18px;
         }
-
-
       }
 
       &__image {
         text-align: center;
         padding: 25px 0 20px;
+        position: relative;
+
+
       }
 
       .text-box {
@@ -81,9 +84,13 @@
         background: $yellow;
         color: $white;
 
+
         img {
-          color: $yellow;
+          // background-image: url(../images/money-1-white.png);
+
         }
+
+
       }
     }
   }
