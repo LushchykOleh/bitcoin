@@ -3,8 +3,39 @@
   margin: 150px 0;
 
   //min-width: 0;
+<<<<<<< HEAD
+
   @include screen(1125) {
     margin: 100px 0 0;
+  }
+
+  &__wrapper-swiper {
+    .swiper-button {
+      max-width: 800px;
+      position: absolute;
+      display: block;
+
+      .swiper-button-prev {
+        color: white;
+      }
+    }
+
+    .container {
+
+      width: 800px;
+      max-width: 1000px;
+      height: 500px;
+
+      .swiper-wrapper {
+        .swiper-slide {
+          padding: auto;
+        }
+      }
+    }
+=======
+  @include screen(1125) {
+    margin: 100px 0 0;
+>>>>>>> 3d67eebb856a49ee46f0dc4ae765cbf123cfb23c
   }
 
   // &__wrapper-swiper {
@@ -91,6 +122,12 @@
       align-items: center;
       padding: 15px 0;
 
+      @include screen(1180) {
+        display: block;
+        text-align: center;
+
+      }
+
 
       @include screen(1180) {
         display: block;
@@ -146,13 +183,16 @@
 
             padding-bottom: 20px;
           }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3d67eebb856a49ee46f0dc4ae765cbf123cfb23c
         }
 
         .button {
 
           .button-transperent {
 
-            //padding: 7px 0;
             width: 230px;
             font-size: 18px;
             font-weight: 500;
@@ -167,11 +207,14 @@
               background: $yellow;
               border: $yellow;
             }
+
+            @include screen(660) {
+              margin: 30px 0;
+            }
           }
 
           .button-yellow {
 
-            //padding: 7px 0;
             width: 230px;
             font-size: 18px;
             font-weight: 500;
@@ -193,7 +236,6 @@
         }
 
       }
-
     }
   }
 }
