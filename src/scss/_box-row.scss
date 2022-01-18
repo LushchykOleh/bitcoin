@@ -30,6 +30,13 @@
       text-align: center;
       padding: 15px;
 
+      transition: .4s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      margin-bottom: 10px;
 
 
       @include screen(432) {
@@ -42,10 +49,25 @@
       }
 
       &__image {
-        text-align: center;
-        padding: 25px 0 20px;
+        // text-align: center;
+        // padding: 25px 0 20px;
         position: relative;
 
+        // max-width: 71px;
+
+
+        img {
+          opacity: 1;
+          transition: .4s;
+
+          &.hover {
+            opacity: 0;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+          }
+        }
 
       }
 
@@ -84,13 +106,16 @@
         background: $yellow;
         color: $white;
 
+        .box__image {
 
-        img {
-          // background-image: url(../images/money-1-white.png);
+          img {
+            opacity: 0;
 
+            &.hover {
+              opacity: 1;
+            }
+          }
         }
-
-
       }
     }
   }
