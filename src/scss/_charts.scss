@@ -1,0 +1,104 @@
+.charts {
+  padding: 45px 45px;
+
+  .tabs {
+
+    &__buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.63);
+      padding: 0 20px;
+    }
+
+    &__button {
+      font-size: 17px;
+      font-weight: 700;
+      font-family: $poppins;
+      padding: 15px 20px;
+      cursor: pointer;
+      transition: .4s;
+      color: $white;
+
+      &.active,
+      &:hover {
+        color: $yellow;
+      }
+    }
+
+    &__content {
+      border: 1px solid rgba(255, 255, 255, 0.63);
+      padding: 0 15px;
+    }
+
+    &__item {
+      display: none;
+      padding: 0 75px 45px;
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .col-50 {
+          display: block;
+          max-width: calc(50% - 20px);
+          width: auto;
+
+          .charts__title {
+            display: flex;
+            justify-content: space-between;
+            padding: 35px 0 35px;
+          }
+        }
+      }
+    }
+
+    &__marquee {
+      border-bottom: 1px solid rgba(54, 54, 54, .26);
+      padding: 25px 0;
+      display: flex;
+      align-items: center;
+      margin: 0 0 36px;
+
+      &-item {
+        text-align: center;
+        // width: calc(20% - 15px);
+        width: 20%;
+        padding: 0 15px;
+
+        div {
+          text-transform: uppercase;
+          margin: 0 0 8px;
+
+        }
+      }
+    }
+
+    &__title {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 32px;
+
+      h5 {
+        font-weight: 700;
+        font-size: 20px;
+
+      }
+
+      span {
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: 400;
+      }
+    }
+
+
+
+  }
+}
