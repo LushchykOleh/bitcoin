@@ -844,6 +844,10 @@ table {
     display: flex;
     align-items: center;
     justify-content: flex-end; }
+    @media (max-width: 650px) {
+      .header__navigation {
+        justify-content: space-between;
+        width: 100%; } }
   .header .socials {
     display: flex;
     align-items: center;
@@ -879,35 +883,57 @@ table {
     .header .icon.search {
       background-position: -368px 0;
       margin-left: 45px; }
+    .header .icon:hover {
+      -webkit-filter: brightneess(0.7);
+              filter: brightneess(0.7);
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
   .header__logo {
     color: #fefbfb;
     font-weight: 700;
     font-size: 25px;
     margin-right: 40px; }
-  .header .account__menu {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    padding: 30px 0 0;
-    height: 0;
-    transition: 0.3s;
-    overflow: hidden; }
-    .header .account__menu:hover {
-      overflow: initial;
-      transition: .5s; }
-    .header .account__menu a {
-      display: block;
-      color: #fff;
-      font-size: 20px;
-      padding: 10px 25px;
-      white-space: nowrap;
-      background: blue; }
-      .header .account__menu a:first-child {
-        border-radius: 5px 5px 0 0; }
-      .header .account__menu a:last-child {
-        border-radius: 0 0 5px 5px; }
+  .header .account {
+    position: relative; }
+    .header .account__menu {
+      position: absolute;
+      top: 1%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      padding: 30px 0 0;
+      max-height: 0;
+      transition: 0.3s;
+      overflow: hidden;
+      z-index: 1; }
+      .header .account__menu:hover {
+        overflow: initial;
+        transition: .5s; }
+      .header .account__menu a {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        padding: 10px 25px;
+        white-space: nowrap;
+        background: blue; }
+        .header .account__menu a:hover {
+          -webkit-filter: brightneess(0.5);
+                  filter: brightneess(0.5);
+          -webkit-transform: scale(1.1);
+                  transform: scale(1.1); }
+          .header .account__menu a:hover:first-child {
+            border-radius: 5px 5px 5px 5px; }
+          .header .account__menu a:hover:last-child {
+            border-radius: 5px 5px 5px 5px; }
+        .header .account__menu a:first-child {
+          border-radius: 5px 5px 0 0; }
+        .header .account__menu a:last-child {
+          border-radius: 0 0 5px 5px; }
+    .header .account .search {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-left: 45px; }
   .header .menu-icon {
     margin-left: 60px; }
     .header .menu-icon .burger-btn {

@@ -14,6 +14,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @include screen(650) {
+      justify-content: space-between;
+      width: 100%;
+
+    }
   }
 
   .socials {
@@ -76,6 +82,11 @@
       background-position: -368px 0;
       margin-left: 45px;
     }
+
+    &:hover {
+      filter: brightneess(0.7);
+      transform: scale(1.2);
+    }
   }
 
   &__logo {
@@ -86,16 +97,18 @@
   }
 
   .account {
+  position: relative;
 
     &__menu {
       position: absolute;
-      top: 100%;
+      top: 1%;
       left: 50%;
       transform: translateX(-50%);
       padding: 30px 0 0;
-      height: 0;
+      max-height: 0;
       transition: 0.3s;
       overflow: hidden;
+      z-index: 1;
 
       &:hover {
         overflow: initial;
@@ -110,6 +123,19 @@
         white-space: nowrap;
         background: blue;
 
+        &:hover {
+          filter: brightneess(0.5);
+          transform: scale(1.1);
+
+          &:first-child {
+            border-radius: 5px 5px 5px 5px;
+          }
+  
+          &:last-child {
+            border-radius: 5px 5px 5px 5px;
+          }
+        }
+
         &:first-child {
           border-radius: 5px 5px 0 0;
         }
@@ -120,6 +146,57 @@
 
       }
     }
+
+    .search {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-left: 45px;
+
+      // .input {
+      //   margin: 0;
+      //   border: none;
+      //   width: 30px;
+      //   padding: 10px;
+      //   transition: width 0.3s;
+      //   border-radius: 15px;
+      //   background: grey;
+      // }
+  
+      // .input, .search-button {
+      //   &:focus  {
+      //     outline: none;
+      //   }
+      // }
+  
+      // &.active {
+  
+      //   .input {
+      //     width: 250px;
+      //     background: white;
+  
+      //     @include screen(768) {
+      //       width: 120px;
+      //     }
+      //   }
+  
+      //   .search-button {
+      //     transform: translateX(220px);
+      //     background: white;
+  
+      //     @include screen(768) {
+      //       transform: translateX(220px);
+      //     }
+  
+      //     img {
+      //       filter: invert(0.5)
+      //     }
+      //   }
+      // }
+    }
+
+    
+
   }
 
   .menu-icon {
