@@ -1,5 +1,7 @@
 const path = require("path");
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {
+    CleanWebpackPlugin
+} = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
@@ -23,12 +25,10 @@ const config = {
         ]
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.(sass|scss)$/,
                 include: path.resolve(__dirname, "./src/scss"),
-                use: [
-                    {
+                use: [{
                         loader: MiniCssExtractPlugin.loader,
                         options: {
                             publicPath: '../'
@@ -46,7 +46,9 @@ const config = {
                         options: {
                             sourceMap: true,
                             postcssOptions: {
-                                plugins: [['autoprefixer', { }]]
+                                plugins: [
+                                    ['autoprefixer', {}]
+                                ]
                             }
                         }
                     },
@@ -63,7 +65,7 @@ const config = {
                 use: {
                     loader: "html-loader",
                     options: {
-                        attrs: ['img:src','link:href','source:srcset']
+                        attrs: ['img:src', 'link:href', 'source:srcset']
                     }
                 }
             },
@@ -98,12 +100,16 @@ const config = {
             }
         }),
         new CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: "./src/bg-images/**/*",
-                    to: "./bg-images"
-                },
-            ],
+            patterns: [{
+                from: "./src/bg-images/**/*",
+                to: "./bg-images"
+            }, ],
+        }),
+        new CopyWebpackPlugin({
+            patterns: [{
+                from: "src/video",
+                to: "video"
+            }, ],
         }),
     ]
 };
