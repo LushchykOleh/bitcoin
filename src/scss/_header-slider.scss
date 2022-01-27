@@ -1,5 +1,4 @@
 .header-slider {
-
   margin: 150px 0;
   overflow: hidden;
 
@@ -10,8 +9,6 @@
   }
 
   &__wrapper-swiper {
-
-
     .swiper-button {
       width: 200px;
       position: absolute;
@@ -27,7 +24,7 @@
       .swiper-button-prev,
       .swiper-button-next {
         position: absolute;
-        z-index: 3;
+        z-index: 2;
         border: 4px solid white;
         padding: 10px;
         margin: 10px;
@@ -134,9 +131,7 @@
     // }
 
     .swiper-wrapper {
-
       .swiper-slide {
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -145,19 +140,14 @@
         @include screen(1180) {
           display: block;
           text-align: center;
-
         }
-
 
         @include screen(1180) {
           display: block;
           text-align: center;
-
         }
 
-
         &__colum-50 {
-
           margin-left: 80px;
 
           @include screen(1180) {
@@ -167,7 +157,6 @@
           }
 
           .text-55 {
-
             font-size: 55px;
             font-weight: 700;
             font-family: $openSans;
@@ -195,21 +184,16 @@
             padding-bottom: 60px;
 
             @include screen(1180) {
-
               padding-bottom: 20px;
             }
 
             @include screen(1125) {
-
               padding-bottom: 20px;
             }
-
           }
 
           .button {
-
             .button-transperent {
-
               width: 230px;
               font-size: 18px;
               font-weight: 500;
@@ -231,7 +215,6 @@
             }
 
             .button-yellow {
-
               width: 230px;
               font-size: 18px;
               font-weight: 500;

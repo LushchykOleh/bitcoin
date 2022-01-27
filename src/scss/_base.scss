@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap");
 
 * {
     margin: 0;
@@ -40,11 +40,9 @@ img {
 }
 
 body {
-
     font: 400 17px/1 $poppins;
     color: $light;
     background: #041436 url(../images/background.jpg) no-repeat 50% 100%;
-
 }
 
 a {
@@ -74,4 +72,9 @@ table {
 
 .gold-text {
     color: $yellow;
+}
+
+video {
+    width: 100%;
+    height: auto;
 }

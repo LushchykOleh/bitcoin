@@ -1,0 +1,182 @@
+.testimonial {
+    padding: 35px 0;
+
+    h3 {
+        font-size: 45px;
+        font-family: $poppins;
+        font-weight: 500;
+        line-height: 1.75;
+        color: $white;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .container {
+        &__wrapper {
+            max-width: 1300px;
+            height: 575px;
+            width: 100%;
+            border: 1px solid $white;
+            margin: 0 auto;
+            padding: 80px 80px 30px;
+        }
+
+        .slider-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .column-left {
+                display: block;
+                width: 100%;
+                text-align: center;
+
+                .foto {
+                    border-radius: 55px;
+                    padding: 15px;
+                }
+
+                .text-17 {
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 1.65;
+                    font-family: $poppins;
+                }
+
+                .gold-text {
+                    font-size: 15px;
+                    font-family: $poppins;
+                    font-weight: 400;
+                    line-height: 1.65;
+                    color: $yellow;
+
+                    // &:before {
+                    //     content: "";
+                    //     width: 100%;
+                    //     height: auto;
+                    // }
+                }
+                .column-right {
+                    max-width: 930px;
+                    width: 100%;
+                    text-align: left;
+
+                    .text-17 {
+                        font-size: 17px;
+                        font-weight: 400;
+                        font-family: $poppins;
+                        line-height: 1.65;
+                    }
+                }
+            }
+        }
+    }
+    // .swiper-pagination-bullets {
+    //     width: 20px;
+    //     height: 20px;
+    //     color: #fff;
+
+    //     &.swiper-pagination-bullet-active {
+    //         background: $white;
+    //     }
+    // }
+
+    &__wrapper {
+        .swiper {
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+            z-index: 1;
+        }
+
+        .swiper-pagination-bullet {
+            width: 40px;
+            height: 40px;
+            background: #ddd;
+
+            &.swiper-pagination-bullet-active {
+                background: $white;
+            }
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.67;
+        }
+
+        //     .swiper {
+        //         .swiper-wrapper {
+        //             .swiper-slider {
+        //                 .slider-row {
+        //                     display: flex;
+
+        //                     .column-left {
+        //                         float: right;
+        //                         display: block;
+
+        //                         .foto {
+        //                             border-radius: 5px;
+        //                             padding: 15px;
+        //                         }
+
+        //                         .text-17 {
+        //                             font-weight: 500;
+        //                             font-size: 17px;
+        //                             line-height: 1.65;
+        //                             font-family: $poppins;
+        //                         }
+
+        //                         .gold-text {
+        //                             font-size: 15px;
+        //                             font-family: $poppins;
+        //                             font-weight: 400;
+        //                             line-height: 1.65;
+        //                             color: $yellow;
+
+        //                             &:before {
+        //                                 content: "";
+        //                                 width: 100%;
+        //                                 height: auto;
+        //                             }
+        //                         }
+        //                     }
+
+        //                     .column-right {
+        //                         float: right;
+        //                         max-width: 930px;
+        //                         width: 100%;
+
+        //                         .text-17 {
+        //                             font-size: 17px;
+        //                             font-weight: 400;
+        //                             font-family: $poppins;
+        //                             line-height: 1.65;
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+
+        //     .swiper-pagination {
+        //         width: 40px;
+        //         height: 40px;
+        //         border-radius: 50%;
+        //         color: $white;
+        //     }
+        .swiper-wrapper {
+            padding: 20px 0;
+            .swiper-slide {
+                .slider-row {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
